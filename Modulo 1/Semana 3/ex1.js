@@ -1,4 +1,4 @@
 let horasTrabalhadas = 0;
-let setor = '';
+let setor = 'Desenvolvimento';
 let valorHora = 0;
-let nomeFuncionario = '';
+let nomeFuncionario = 'André Rosa de Matos';
