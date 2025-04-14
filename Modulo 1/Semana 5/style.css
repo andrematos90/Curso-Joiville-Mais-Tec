@@ -42,3 +42,10 @@ body, html {
   border: 1px solid white;
   
 }
+
+.mensagem-erro {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: white
+}
