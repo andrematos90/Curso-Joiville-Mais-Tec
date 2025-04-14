@@ -103,3 +103,28 @@ body, html {
 #rhArea th {
   background-color: #f2f2f2;
 }
+
+#tiArea {
+  margin-top: 20px;
+}
+
+#tiArea input {
+  padding: 8px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+#tiArea button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#tiArea .resultado-binario {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
