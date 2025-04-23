@@ -7,7 +7,17 @@
     <title>Semana 5</title>
 </head>
 <body>
+   
+
     <div class="login-container">
+
+        <div id="mensagemErro" class="mensagem-erro"></div>
+        <div id="produto" class="produto-container" style="display: none;"></div>
+        <div id="rhArea" style="display: none;"></div>
+        <div id="tiArea" style="display: none;"></div>
+
+        
+
        <form action="">
         <label for="userID">Usuário:
             <input type="text" name="user" id="userID">
@@ -23,8 +33,10 @@
                 <option value="ti">TI</option>
             </select>
         </label>
+        <button type="button" onclick="verificarLogin()">Entrar</button>
+
        </form>
     </div>
-    <script src="ex1.js"></script>
+    <script src="ex3.js"></script>
 </body>
 </html>

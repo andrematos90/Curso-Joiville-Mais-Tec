@@ -42,3 +42,89 @@ body, html {
   border: 1px solid white;
   
 }
+
+.mensagem-erro {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: white
+}
+
+.produto-container {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.produto-container img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.produto-container h2 {
+  margin: 10px 0 5px;
+}
+
+.produto-container p {
+  font-size: 18px;
+  color: #333;
+}
+
+#rhArea {
+  margin-top: 20px;
+}
+
+#rhArea button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#rhArea table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#rhArea th, #rhArea td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+#rhArea th {
+  background-color: #f2f2f2;
+}
+
+#tiArea {
+  margin-top: 20px;
+}
+
+#tiArea input {
+  padding: 8px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+#tiArea button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#tiArea .resultado-binario {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
