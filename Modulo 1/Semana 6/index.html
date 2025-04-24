@@ -7,20 +7,20 @@
     <title>Jogo da Forca</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Jogo da Forca</h1>
-        <div class="word" id="wordDisplay">_ _ _ _ _</div>
-        <div class="input-area">
-            <input type="text" id="letterInput" maxlength="1" autofocus>
-            <button onclick="tentarLetra()">Tentar</button>
-        </div>
-        <div class="wrong-letters" id="wrongLetters">Letras erradas: </div>
-        <div class="message" id="message"></div>
-    </div>
+    <h1>Jogo da Forca</h1>
+<div id="palavra"></div>
+<div>
+    <input type="text" id="entradaLetra" maxlength="1">
+    <button id="verificarLetra">Tentar Letra</button>
+</div>
+<div>
+    <h3>Letras erradas:</h3>
+    <div id="letrasErradas"></div>
 
-   <script src="ex2.js"></script>
+    <script src="ex3.js"></script>
+</div>
 </body>
+
 
 </html>
