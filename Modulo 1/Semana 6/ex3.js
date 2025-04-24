@@ -58,13 +58,6 @@ const palavras = [
   
     exibirEspacos();
     input.value = '';
-
-    const todasLetrasAcertadas = palavraSorteada.split("").every(letra => letrasCertas.includes(letra));
-    if (todasLetrasAcertadas) {
-      setTimeout(() => {
-        alert("Parabéns! Você acertou a palavra: " + palavraSorteada);
-      }, 100); 
-    }
+    
   });
- 
   
