@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Ações de Reflorestamento</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Registrar Ação de Reflorestamento</h1>
+    <form id="reflorestamentoForm">
+      <label>Quantidade de Árvores Plantadas:
+        <input type="number" id="quantidade" min="1" required />
+      </label>
+      <label>Espécie da Árvore:</label>
+      <select id="especie" required>
+        <option value="">Selecione...</option>
+        <option value="ipê">Ipê</option>
+        <option value="angico">Angico</option>
+        <option value="aroeira">Aroeira</option>
+        <option value="jequitibá">Jequitibá</option>
+        <option value="peroba-do-campo">Peroba do Campo</option>
+      </select>
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+
+  <script src="reflorestamento.js"></script>
+</body>
+</html>

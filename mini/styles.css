@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color, #f0f0f0);
+    color: var(--text-color, #000);
+    transition: 0.3s;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: var(--primary-color, #007bff);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Temas das árvores */
+  body.pau-brasil {
+    --primary-color: #a30000;
+    --bg-color: #ffe5e5;
+  }
+  
+  body.castanheira {
+    --primary-color: #8b4513;
+    --bg-color: #f7efe5;
+  }
+  
+  body.peroba-rosa {
+    --primary-color: #d26a8c;
+    --bg-color: #ffe4ec;
+  }
+  
