@@ -1,53 +1,81 @@
-/* Temas das árvores */
-
-
 body {
     font-family: Arial, sans-serif;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--text-color, #000);
-    transition: 0.3s;
-    height: 100%;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-}
-
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    color: #000;
+  }
+  
+  /* Estilo base da caixa */
+  .container {
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-body.pau-brasil {
-    --primary-color: #a30000;
-    --bg-color: #ffe5e5;
-    background-image: url(img/pau-brasil.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-body.castanheira {
-    --primary-color: #8b4513;
-    --bg-color: #f7efe5;
-    background-image: url(img/castanheira.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-body.peroba-rosa {
-    --primary-color: #d26a8c;
-    --bg-color: #ffe4ec;
-    background-image: url(img/peroba.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: var(--primary-color, #008080);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Estilos por tipo de árvore */
+  
+  body.pau-brasil {
+    --primary-color: #a30000; /* vermelho cor de brasa */
+    background-image: url('img/pau-brasil.jpeg');
+  }
+  
+  body.castanheira {
+    --primary-color: #836953; /* marrom acinzentado */
+    background-image: url('img/castanheira.jpg');
+  }
+  
+  body.peroba-rosa {
+    --primary-color: #d26a8c; /* rosado */
+    background-image: url('img/peroba.jpeg');
+  }
+  
+  #resultado {
+    background: #f4f4f4;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
