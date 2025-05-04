@@ -1,66 +1,53 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--bg-color, #f0f0f0);
-    color: var(--text-color, #000);
-    transition: 0.3s;
-  }
+  font-family: Arial, sans-serif;
+  background-image: url(img/wallpaper.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-color, #000);
+  transition: 0.3s;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   
-  .container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  form label {
-    display: block;
-    margin: 10px 0 5px;
-    padding: 8px;
-  }
-  
-  input, select, button {
-    width: 100%;
-    padding: 6px;
-    margin-bottom: 15px;
-  }
-  
-  button {
-    background-color: var(--primary-color, #007bff);
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  button:hover {
-    opacity: 0.9;
-  }
-  
-  /* Temas das árvores */
-  body.pau-brasil {
-    --primary-color: #a30000;
-    --bg-color: #ffe5e5;
-    background-image: url(pau-brasil.jpeg);
-    background-size: cover;       
-    background-position: center;  
-    
-  }
-  
-  body.castanheira {
-    --primary-color: #8b4513;
-    --bg-color: #f7efe5;
-      background-image: url(castanheira.jpg);
-      background-size: cover;       
-      background-position: center;  
-  }
-  
-  body.peroba-rosa {
-    --primary-color: #d26a8c;
-    --bg-color: #ffe4ec;
-    background-image: url(peroba.jpeg);
-    background-size: cover;       
-    background-position: center;  
-  }
-  
+}
+
+.container {
+  max-width: 400px;
+  min-height: 500px; /* ou o valor que preferir */
+  margin: 100px auto 50px 50px; /* margem à esquerda */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  padding: 8px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: var(--primary-color, #008080);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.9;
+}

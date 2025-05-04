@@ -1,0 +1,53 @@
+/* Temas das árvores */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-color, #000);
+    transition: 0.3s;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.pau-brasil {
+    --primary-color: #a30000;
+    --bg-color: #ffe5e5;
+    background-image: url(img/pau-brasil.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+body.castanheira {
+    --primary-color: #8b4513;
+    --bg-color: #f7efe5;
+    background-image: url(img/castanheira.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.peroba-rosa {
+    --primary-color: #d26a8c;
+    --bg-color: #ffe4ec;
+    background-image: url(img/peroba.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
