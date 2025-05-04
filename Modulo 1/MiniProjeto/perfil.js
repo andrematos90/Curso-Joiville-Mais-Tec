@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const arvore = localStorage.getItem('arvore');
+  if (arvore) {
+    document.body.classList.add(arvore);
+  }
+
   const nome = document.getElementById("nomeUsuario");
   const especie = document.getElementById("arvoreUsuario");
   const total = document.getElementById("totalArvores");
@@ -8,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Pega os dados do localStorage
   const nomeSalvo = localStorage.getItem("nomeUsuario") || "Usuário não identificado";
-  const arvore = localStorage.getItem("arvore") || "pau-brasil";
+  const arvoreEscolhida = localStorage.getItem("arvore") || "pau-brasil";
   const totalPlantadas = parseInt(localStorage.getItem("totalPlantadas")) || 0;
   const bioSalva = localStorage.getItem("bio") || "";
 
   nome.textContent = nomeSalvo;
-  especie.textContent = arvore.replace("-", " ");
+  especie.textContent = arvoreEscolhida.replace("-", " ");
   total.textContent = totalPlantadas;
   bio.value = bioSalva;
 
@@ -26,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return `img/${arvore}-${fase}.jpg`;
   }
 
-  avatar.src = obterAvatar(arvore, totalPlantadas);
+  avatar.src = obterAvatar(arvoreEscolhida, totalPlantadas);
 
   btnSalvarBio.addEventListener("click", () => {
     localStorage.setItem("bio", bio.value);

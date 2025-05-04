@@ -1,32 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url(img/wallpaper.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .perfil-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  .avatar-container img {
-    width: 150px;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 12px;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-image: url(img/wallpaper.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo do perfil */
+.perfil-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.avatar-container img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+body.pau-brasil {
+  --primary-color: #a30000; /* vermelho cor de brasa */
+  background-image: url('img/pau-brasil.jpeg');
+}
+
+body.castanheira {
+  --primary-color: #836953; /* marrom acinzentado */
+  background-image: url('img/castanheira.jpg');
+}
+
+body.peroba-rosa {
+  --primary-color: #d26a8c; /* rosado */
+  background-image: url('img/peroba.jpeg');
+}
+
+
+#salvarBio {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--primary-color, #008080);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#salvarBio:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#bio {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+

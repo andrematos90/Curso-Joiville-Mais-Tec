@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const arvore = localStorage.getItem('arvore');
+  if (arvore) {
+    document.body.classList.add(arvore);
+  }
+
   const form = document.getElementById('reflorestamentoForm');
   const resultado = document.getElementById('resultado');
   const btnPerfil = document.getElementById('btnPerfil');

@@ -1,109 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.3s;
-    color: #000;
-  }
-  
-  /* Estilo base da caixa */
-  .container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 400px;
-    width: 90%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  input, select, button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    background-color: var(--primary-color, #008080);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    opacity: 0.9;
-  }
-  
-  /* Estilos por tipo de árvore */
-  
-  body.pau-brasil {
-    --primary-color: #a30000; /* vermelho cor de brasa */
-    background-image: url('img/pau-brasil.jpeg');
-  }
-  
-  body.castanheira {
-    --primary-color: #836953; /* marrom acinzentado */
-    background-image: url('img/castanheira.jpg');
-  }
-  
-  body.peroba-rosa {
-    --primary-color: #d26a8c; /* rosado */
-    background-image: url('img/peroba.jpeg');
-  }
-  
-  #resultado {
-    background: #f4f4f4;
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 5px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  color: #000;
+}
 
-  /* Botão no topo direito */
+/* Estilo base da caixa */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: var(--primary-color, #008080);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Estilos por tipo de árvore */
+body.pau-brasil {
+  --primary-color: #a30000; /* vermelho cor de brasa */
+  background-image: url('img/pau-brasil.jpeg');
+}
+
+body.castanheira {
+  --primary-color: #836953; /* marrom acinzentado */
+  background-image: url('img/castanheira.jpg');
+}
+
+body.peroba-rosa {
+  --primary-color: #d26a8c; /* rosado */
+  background-image: url('img/peroba.jpeg');
+}
+
+#resultado {
+  background: #f4f4f4;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* Botão no topo direito */
 .top-bar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 15px 20px;
-    z-index: 1000;
-    background: transparent; /* ou coloque uma cor se quiser uma barra */
-  }
-  
-  #btnPerfil {
-    background-color: var(--primary-color, #008080);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    transition: opacity 0.2s;
-  }
-  
-  #btnPerfil:hover {
-    opacity: 0.85;
-  }
-  
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px 20px;
+  z-index: 1000;
+  background: transparent; /* ou coloque uma cor se quiser uma barra */
+}
+
+#btnPerfil {
+  background-color: var(--primary-color, #008080);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: opacity 0.2s;
+}
+
+#btnPerfil:hover {
+  opacity: 0.85;
+}
