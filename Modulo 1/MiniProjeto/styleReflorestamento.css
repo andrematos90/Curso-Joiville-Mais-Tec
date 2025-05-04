@@ -79,3 +79,31 @@ body {
     border-radius: 5px;
   }
   
+
+  /* Botão no topo direito */
+.top-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px 20px;
+    z-index: 1000;
+    background: transparent; /* ou coloque uma cor se quiser uma barra */
+  }
+  
+  #btnPerfil {
+    background-color: var(--primary-color, #008080);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: opacity 0.2s;
+  }
+  
+  #btnPerfil:hover {
+    opacity: 0.85;
+  }
+  
