@@ -2,7 +2,7 @@ class Reflorestamento {
     constructor(quantidade, especie, usuario = "") {
       this.quantidade = quantidade;
       this.especie = especie;
-      this.usuario = usuario; // Vazio por enquanto
+      this.usuario = usuario; 
     }
   
     gerarJson() {
@@ -15,7 +15,7 @@ class Reflorestamento {
   }
   
   document.addEventListener('DOMContentLoaded', () => {
-    // Aplica o tema com base na árvore escolhida no cadastro
+  
     const tema = localStorage.getItem('arvore');
     if (tema) {
       document.body.classList.add(tema);
