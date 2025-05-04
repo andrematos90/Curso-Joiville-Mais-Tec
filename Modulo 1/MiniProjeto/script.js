@@ -49,6 +49,9 @@ class Usuario {
       console.log("Objeto para envio:", usuario.gerarJson());
   
       alert("Usuário cadastrado com sucesso!");
+      
+      localStorage.setItem("nomeUsuario", nome);
+
       window.location.href = "reflorestamento.html";
       
     });
