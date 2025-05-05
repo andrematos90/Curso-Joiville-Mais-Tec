@@ -7,16 +7,25 @@
   <link rel="stylesheet" href="styleRelatorio.css">
 </head>
 <body>
-  <div class="search-container">
+  <header class="top-bar">
+    <div class="menu-card">
+      <button id="btnPerfil">Perfil</button>
+      <button id="btnRelatorio">Relatório</button>
+      <button id="btnDestaques">Destaques</button>
+    </div>
+  </header>
+
+  <div class="relatorio-container">
     <h1>Relatório de Reflorestamento</h1>
+
     <label for="buscaNome">Buscar por nome de usuário:</label>
     <input type="text" id="buscaNome" />
-    
+
     <label for="buscaArvore">Buscar por tipo de árvore:</label>
     <input type="text" id="buscaArvore" />
-    
+
     <button id="btnBuscar">Buscar</button>
-    
+
     <div id="resultados" class="resultado"></div>
   </div>
 

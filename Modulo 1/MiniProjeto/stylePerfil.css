@@ -1,20 +1,62 @@
+
 body {
   font-family: Arial, sans-serif;
-  background-image: url(img/wallpaper.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #333;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  position: relative;
 }
 
 
+.top-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.menu-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  pointer-events: all;
+}
+
+
+.menu-card button {
+  padding: 10px 20px;
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-card button:hover {
+  background-color: #558b2f;
+}
+
 .perfil-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: white;
   padding: 30px;
   border-radius: 12px;
@@ -24,26 +66,12 @@ body {
   width: 100%;
 }
 
+
 .avatar-container img {
   width: 150px;
   height: auto;
   margin-bottom: 20px;
   border-radius: 12px;
-}
-
-body.pau-brasil {
-  --primary-color: #a30000; 
-  background-image: url('img/pau-brasil.jpeg');
-}
-
-body.castanheira {
-  --primary-color: #836953; 
-  background-image: url('img/castanheira.jpg');
-}
-
-body.peroba-rosa {
-  --primary-color: #d26a8c; 
-  background-image: url('img/peroba.jpeg');
 }
 
 
@@ -65,12 +93,14 @@ body.peroba-rosa {
   transform: scale(1.02);
 }
 
+/* Container da bio */
 .bio-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
+
 
 #bio {
   width: 80%;
@@ -83,3 +113,18 @@ body.peroba-rosa {
   margin-bottom: 15px;
 }
 
+
+body.pau-brasil {
+  --primary-color: #a30000;
+  background-image: url('img/pau-brasil.jpeg');
+}
+
+body.castanheira {
+  --primary-color: #836953;
+  background-image: url('img/castanheira.jpg');
+}
+
+body.peroba-rosa {
+  --primary-color: #d26a8c;
+  background-image: url('img/peroba.jpeg');
+}

@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   background-image: url('img/wallpaper.jpeg');
@@ -6,58 +5,78 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: var(--text-color, #000);
-  transition: 0.3s;
-  height: 100%;
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 50px;
+  position: relative;
 }
+
 
 .top-bar {
-  background-color: #333;
-  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 20px;
-  text-align: center;
   width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  pointer-events: none;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin: 0;
+.menu-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row; 
+  gap: 10px;
+  pointer-events: all;
 }
 
+.menu-card button {
+  padding: 10px 20px;
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-card button:hover {
+  background-color: #558b2f;
+}
 
 .container {
-  width: 20%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
   display: flex;
   justify-content: center;
+  align-items: flex-start; 
+  padding-top: 10vh; 
+  padding-bottom: 40px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
-
 
 .destaques-container {
   background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 30px;
+  border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 1000px;
+  width: 90%;             
+  max-width: 600px;
+  margin: 0 auto;          
+  text-align: center;
 }
 
 .destaques-container h2 {
-  font-size: 1.6em; 
+  font-size: 1.8em; 
   margin-bottom: 20px;
-  text-align: center;
   color: #333; 
 }
-
 
 .destaque {
   text-align: center;

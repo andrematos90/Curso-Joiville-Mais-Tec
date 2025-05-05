@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = "perfil.html";
   });
 
+  btnRelatorio?.addEventListener("click", () => {
+    window.location.href = "relatorio.html";
+  });
+
+  btnDestaques?.addEventListener("click", () => {
+    window.location.href = "destaques.html";
+  });
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const qtd = parseInt(document.getElementById('quantidade').value);

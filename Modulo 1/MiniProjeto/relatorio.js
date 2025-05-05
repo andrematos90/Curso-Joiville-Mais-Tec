@@ -8,6 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
     return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   }
 
+  btnPerfil.addEventListener("click", () => {
+    window.location.href = "perfil.html";
+  });
+
+  btnRelatorio?.addEventListener("click", () => {
+    window.location.href = "relatorio.html";
+  });
+
+  btnDestaques?.addEventListener("click", () => {
+    window.location.href = "destaques.html";
+  });
+
+
   btnBuscar.addEventListener("click", () => {
     const nomeBusca = normalizar(inputNome.value.trim());
     const arvoreBusca = normalizar(inputArvore.value.trim());

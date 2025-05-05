@@ -22,6 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
   total.textContent = totalPlantadas;
   bio.value = bioSalva;
 
+  btnPerfil.addEventListener("click", () => {
+    window.location.href = "perfil.html";
+  });
+
+  btnRelatorio?.addEventListener("click", () => {
+    window.location.href = "relatorio.html";
+  });
+
+  btnDestaques?.addEventListener("click", () => {
+    window.location.href = "destaques.html";
+  });
+
+
   function obterAvatar(arvore, quantidade) {
     let fase = "1";
     if (quantidade >= 1500) fase = "4";

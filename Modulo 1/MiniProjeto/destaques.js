@@ -10,6 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     const destaquesContainer = document.getElementById("destaques");
+
+    btnPerfil.addEventListener("click", () => {
+      window.location.href = "perfil.html";
+    });
+  
+    btnRelatorio?.addEventListener("click", () => {
+      window.location.href = "relatorio.html";
+    });
+  
+    btnDestaques?.addEventListener("click", () => {
+      window.location.href = "destaques.html";
+    });
+  
     
     topUsuarios.forEach(usuario => {
       const avatarUrl = `img/${usuario.arvore}-1.jpg`; 
