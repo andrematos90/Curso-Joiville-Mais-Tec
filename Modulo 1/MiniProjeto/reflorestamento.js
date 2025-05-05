@@ -16,11 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     const qtd = parseInt(document.getElementById('quantidade').value);
 
-    let totalAnterior = parseInt(localStorage.getItem('totalPlantadas')) || 0;
-    let novoTotal = totalAnterior + qtd;
+    const nomeUsuario = localStorage.getItem("nomeUsuario");
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    localStorage.setItem('totalPlantadas', novoTotal);
-    resultado.textContent = `Você registrou ${qtd} árvores. Total agora: ${novoTotal}.`;
+    let usuario = usuarios.find(u => u.nome === nomeUsuario);
+    if (usuario) {
+      usuario.totalPlantadas = (usuario.totalPlantadas || 0) + qtd;
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      localStorage.setItem("totalPlantadas", usuario.totalPlantadas);
+    }
+
+    resultado.textContent = `Você registrou ${qtd} árvores. Total agora: ${usuario?.totalPlantadas || qtd}.`;
     form.reset();
   });
 });
