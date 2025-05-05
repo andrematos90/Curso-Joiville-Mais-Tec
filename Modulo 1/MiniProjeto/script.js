@@ -45,7 +45,7 @@ class Usuario {
       body.className = ''; // Limpa classes anteriores
       body.classList.add(arvore);
   
-      // Exibe o JSON no console (substitua por POST futuramente)
+      
       console.log("Objeto para envio:", usuario.gerarJson());
   
       alert("Usuário cadastrado com sucesso!");

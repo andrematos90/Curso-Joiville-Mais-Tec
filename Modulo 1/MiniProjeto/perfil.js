@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const bio = document.getElementById("bio");
   const btnSalvarBio = document.getElementById("salvarBio");
 
-  // Pega os dados do localStorage
+
   const nomeSalvo = localStorage.getItem("nomeUsuario") || "Usuário não identificado";
   const arvoreEscolhida = localStorage.getItem("arvore") || "pau-brasil";
   const totalPlantadas = parseInt(localStorage.getItem("totalPlantadas")) || 0;

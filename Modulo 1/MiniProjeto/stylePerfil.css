@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 
-/* Estilo do perfil */
+
 .perfil-container {
   background-color: white;
   padding: 30px;
@@ -32,17 +32,17 @@ body {
 }
 
 body.pau-brasil {
-  --primary-color: #a30000; /* vermelho cor de brasa */
+  --primary-color: #a30000; 
   background-image: url('img/pau-brasil.jpeg');
 }
 
 body.castanheira {
-  --primary-color: #836953; /* marrom acinzentado */
+  --primary-color: #836953; 
   background-image: url('img/castanheira.jpg');
 }
 
 body.peroba-rosa {
-  --primary-color: #d26a8c; /* rosado */
+  --primary-color: #d26a8c; 
   background-image: url('img/peroba.jpeg');
 }
 
