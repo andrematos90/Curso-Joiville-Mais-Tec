@@ -1,0 +1,78 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('img/wallpaper.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-color, #000);
+  transition: 0.3s;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px;
+}
+
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+
+.container {
+  width: 20%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.destaques-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.destaques-container h2 {
+  font-size: 1.6em; 
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; 
+}
+
+
+.destaque {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.destaque img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.destaque p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}

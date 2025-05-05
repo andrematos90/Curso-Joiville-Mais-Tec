@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const usuario = new Usuario(nome, senha, arvore);
     const usuariosSalvos = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    // Verifica se o nome já existe (opcional)
     const nomeExistente = usuariosSalvos.some(u => u.nome === nome);
     if (nomeExistente) {
       alert("Nome de usuário já cadastrado!");

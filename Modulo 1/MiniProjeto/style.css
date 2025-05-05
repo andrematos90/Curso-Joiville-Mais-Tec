@@ -1,6 +1,7 @@
+
 body {
   font-family: Arial, sans-serif;
-  background-image: url(img/wallpaper.jpeg);
+  background-image: url('img/wallpaper.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,17 +13,34 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  padding-left: 50px; 
 }
+
+
+.titulo-destaques {
+  font-size: 3em; 
+  font-weight: bold;
+  text-align: center;
+  color: #fff; 
+  text-transform: uppercase; 
+  margin: 40px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  letter-spacing: 3px; /
+  width: 100%;
+}
+
 
 .container {
   max-width: 400px;
-  min-height: 500px; 
-  margin: 100px auto 50px 50px; 
+  min-height: 500px;
+  margin-top: 50px; 
   padding: 20px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 
