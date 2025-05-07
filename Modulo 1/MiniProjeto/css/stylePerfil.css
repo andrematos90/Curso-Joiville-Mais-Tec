@@ -93,7 +93,7 @@ body {
   transform: scale(1.02);
 }
 
-/* Container da bio */
+
 .bio-container {
   display: flex;
   flex-direction: column;
