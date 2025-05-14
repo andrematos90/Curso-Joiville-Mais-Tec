@@ -1,15 +1,24 @@
 import React from 'react';
 import Menu from './components/menu/Menu';
-import Gnocchi from './components/gnocchi/Gnocchi'
-import Molhos from './components/molhos/Molhos'
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Apresentacao from './components/apresentacao/Apresentacao';
+import Gnocchi from './components/gnocchi/Gnocchi';
+
+
 
 function App() {
   return (
     <div>
-      <Menu />
-      <Gnocchi />
-      <Molhos />
+      <Router>
+      <div>
+        <Menu />
+        <Routes>
+          <Route path="/apresentacao" element={<Apresentacao />} />
+          <Route path="/gnocchi" element={<Gnocchi />} />
+        </Routes>
+      </div>
+    </Router>
     </div>
   );
 }
