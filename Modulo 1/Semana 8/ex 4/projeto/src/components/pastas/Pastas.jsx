@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './Pastas.css';
 import Molhos from '../Molhos/Molhos';
@@ -46,12 +47,8 @@ const PastaCard = ({ pasta }) => (
     <img src={pasta.imagem} alt={pasta.nome} />
     <h3>{pasta.nome}</h3>
     <p className="preco">{pasta.preco}</p>
-    <p className="molhos-titulo">Molhos disponíveis:</p>
-    <ul className="molhos-lista">
-      {pasta.molhos.map((molho, i) => (
-        <li key={i}>{molho}</li>
-      ))}
-    </ul>
+    <p className="molhos-titulo">Molhos permitidos:</p>
+    <Molhos molhos={pasta.molhos} />
   </div>
 );
 
