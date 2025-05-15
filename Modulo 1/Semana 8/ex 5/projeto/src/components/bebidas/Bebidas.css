@@ -1,0 +1,46 @@
+.bebidas {
+  padding: 2rem;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+.bebidas h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #8B0000;
+  text-align: center;
+}
+
+.categoria {
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categoria h3 {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
+}
+
+.icone {
+  font-size: 1.8rem;
+  color: #8B0000;
+}
+
+.bebida-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.1rem;
+}
+
+.bebida-item .preco {
+  font-weight: bold;
+  color: #8B0000;
+}

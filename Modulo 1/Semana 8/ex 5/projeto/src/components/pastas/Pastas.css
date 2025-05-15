@@ -1,0 +1,53 @@
+.pastas-section {
+  padding: 2rem;
+  background-color: #fdf5e6;
+  color: #333;
+}
+
+.pastas-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pastas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pasta-card {
+  background: #ffe4c4;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pasta-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.pasta-card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.pasta-card .preco {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.molhos-titulo {
+  font-weight: bold;
+  margin-top: 0.8rem;
+}
+
+.molhos-lista {
+  list-style: disc;
+  text-align: left;
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}

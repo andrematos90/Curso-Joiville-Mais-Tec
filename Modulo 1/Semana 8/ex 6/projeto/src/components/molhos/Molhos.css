@@ -1,0 +1,20 @@
+.molhos-section {
+    padding: 2rem;
+    background-color: #fff0f5;
+    color: #333;
+  }
+  
+  .molhos-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .molhos-section ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .molhos-section li {
+    margin-bottom: 0.5rem;
+  }
+  
