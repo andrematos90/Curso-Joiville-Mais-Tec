@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import NovaTarefa from '../novatarefa/NovaTarefa';
 import type { Tarefa } from '../../types/Tarefa';
+import './Tarefas.css'
 
 const Tarefas = () => {
   const [tarefas, setTarefas] = useState<Tarefa[]>([]);
@@ -45,7 +46,15 @@ const Tarefas = () => {
                         );
                       }}
                     />
-                    {tarefa.descricao}
+                    <span
+                      style={{
+                        color: tarefa.concluida ? '#999' : 'inherit',
+                        textDecoration: tarefa.concluida ? 'line-through' : 'none',
+                        marginLeft: '8px'
+                      }}
+                    >
+                      {tarefa.descricao}
+                    </span>
                   </label>
                 </li>
               ))}
