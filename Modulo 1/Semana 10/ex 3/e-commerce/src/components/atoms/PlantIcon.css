@@ -1,0 +1,15 @@
+.icon {
+  color: #4caf50; /* verde */
+}
+
+.icon.sm {
+  font-size: 20px;
+}
+
+.icon.md {
+  font-size: 30px;
+}
+
+.icon.lg {
+  font-size: 40px;
+}

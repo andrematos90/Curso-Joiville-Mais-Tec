@@ -1,0 +1,9 @@
+.price-tag {
+  font-weight: bold;
+  color: #2e7d32; /* verde escuro */
+  font-size: 1rem;
+  padding: 4px 8px;
+  background-color: #e8f5e9; /* verde claro de fundo */
+  border-radius: 4px;
+  display: inline-block;
+}
