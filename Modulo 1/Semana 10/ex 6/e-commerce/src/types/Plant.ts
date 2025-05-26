@@ -1,8 +1,6 @@
 export type Plant = {
-  id: number;
+  id: string;
   name: string;
   price: number;
   light: "sun" | "shade";
 };
-
-

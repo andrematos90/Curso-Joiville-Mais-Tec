@@ -1,7 +1,7 @@
 import React from "react";
 import StoreLayout from "../components/templates/StoreLayout";
 import PlantGrid from "../components/organisms/PlantGrid";
-import type { Plant } from "../types";
+import type { Plant } from "../types/Plant";
 
 const mockPlants: Plant[] = [
   { id: "1", name: "Suculenta", price: 29.9, light: "sun" },

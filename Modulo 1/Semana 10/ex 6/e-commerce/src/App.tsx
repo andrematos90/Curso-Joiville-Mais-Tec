@@ -1,40 +1,29 @@
 import React, { useState } from "react";
-import { ThemeProvider, CssBaseline, IconButton, Box } from "@mui/material";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
+import { ThemeProvider, CssBaseline, Paper, Box, Switch } from "@mui/material";
 import { lightTheme, darkTheme } from "./components/themes/Themes";
 import PlantStore from "./pages/PlantStore";
+import "./App.css"; // importa os estilos
 
 const App: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkMode((prev) => !prev);
-  };
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />
-
-      {/* Botão de alternância de tema fixado no canto inferior direito */}
-      <Box
-        sx={{
-          position: "fixed",
-          bottom: 16,
-          right: 16,
-          zIndex: 9999,
-          bgcolor: "background.paper",
-          borderRadius: "50%",
-          boxShadow: 3,
-        }}
-      >
-        <IconButton onClick={toggleTheme} color="inherit">
-          {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
-        </IconButton>
-      </Box>
-
-      {/* Página principal da loja de plantas */}
-      <PlantStore />
+      <div className="app-container">
+        <div className="content-wrapper">
+          <div className="switch-container">
+            <Switch
+              checked={darkMode}
+              onChange={() => setDarkMode((prev) => !prev)}
+              color="primary"
+            />
+          </div>
+          <Paper elevation={3} sx={{ padding: 2 }}>
+            <PlantStore />
+          </Paper>
+        </div>
+      </div>
     </ThemeProvider>
   );
 };
