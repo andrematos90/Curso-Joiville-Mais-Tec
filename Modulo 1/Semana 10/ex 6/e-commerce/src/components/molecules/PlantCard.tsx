@@ -3,13 +3,7 @@ import PlantIcon from "../atoms/PlantIcon";
 import PriceTag from "../atoms/PriceTag";
 import Button from "../atoms/Buttons";
 import styles from "./PlantCard.module.css";
-
-type Plant = {
-  id: number;
-  name: string;
-  price: number;
-  light: "sun" | "shade";
-};
+import type { Plant } from "../../types/Plant";
 
 type PlantCardProps = {
   plant: Plant;
