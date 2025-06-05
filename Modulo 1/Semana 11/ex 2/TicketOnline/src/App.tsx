@@ -1,8 +1,13 @@
-// src/App.tsx
 import { AppRoutes } from './routes';
+import Menu from './components/organisms/menu/menu';
 
 function App() {
-  return <AppRoutes />;
+  return (
+    <>
+      <Menu />
+      <AppRoutes />
+    </>
+  );
 }
 
 export default App;

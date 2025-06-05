@@ -1,9 +1,9 @@
 // src/routes/index.tsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import Filmes from '../pages/Filmes';
-import DetalhesFilme from '../pages/DetalhesFilme';
-import Contato from '../pages/Contato';
+import Home from '../pages/Home/Home';
+import Filmes from '../pages/Filmes/Filmes';
+import DetalhesFilme from '../pages/DetalhesFimes/DetalhesFilme';
+import Contato from '../pages/Contato/Contato';
 
 export function AppRoutes() {
   return (
