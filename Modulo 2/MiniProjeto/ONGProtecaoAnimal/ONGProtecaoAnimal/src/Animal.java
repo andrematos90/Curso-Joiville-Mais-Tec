@@ -19,5 +19,17 @@ public abstract class Animal {
         this.status = status;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public abstract void exibirInfo();
 }
