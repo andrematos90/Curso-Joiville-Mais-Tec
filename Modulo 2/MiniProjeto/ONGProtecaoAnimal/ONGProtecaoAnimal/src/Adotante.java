@@ -3,7 +3,7 @@ package src;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Adotante extends Pessoa {
+public class Adotante extends Pessoa implements Validavel, Relatorio {
     private String preferencias;
     private List<Animal> animaisAdotados;
     private boolean ativo;
@@ -40,6 +40,29 @@ public class Adotante extends Pessoa {
         System.out.println("Animais adotados:");
         for (Animal a : animaisAdotados) {
             System.out.println("- " + a.getNome() + " (" + a.especie + ")");
+        }
+    }
+
+    @Override
+    public boolean validar() {
+        return ativo;
+    }
+
+    @Override
+    public void gerarRelatorio() {
+        System.out.println("=== Relatório do Adotante ===");
+        System.out.println("Nome: " + nome);
+        System.out.println("CPF: " + cpf);
+        System.out.println("Endereço: " + endereco);
+        System.out.println("Preferências: " + preferencias);
+        System.out.println("Status: " + (ativo ? "Ativo" : "Inativo"));
+        System.out.println("Animais Adotados:");
+        if (animaisAdotados.isEmpty()) {
+            System.out.println("- Nenhum animal adotado.");
+        } else {
+            for (Animal a : animaisAdotados) {
+                System.out.println("- " + a.getNome() + " (" + a.especie + ")");
+            }
         }
     }
 }

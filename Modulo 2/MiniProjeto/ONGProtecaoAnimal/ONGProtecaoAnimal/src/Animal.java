@@ -1,6 +1,6 @@
 package src;
 
-public abstract class Animal {
+public abstract class Animal implements Validavel, Relatorio {
     protected String id;
     protected String nome;
     protected String especie;
@@ -32,4 +32,21 @@ public abstract class Animal {
     }
 
     public abstract void exibirInfo();
+
+    @Override
+    public boolean validar() {
+        return "Disponível".equalsIgnoreCase(this.status);
+    }
+
+    @Override
+    public void gerarRelatorio() {
+        System.out.println("=== Relatório do Animal ===");
+        System.out.println("ID: " + id);
+        System.out.println("Nome: " + nome);
+        System.out.println("Espécie: " + especie);
+        System.out.println("Idade: " + idade);
+        System.out.println("Condição de Saúde: " + condicaoSaude);
+        System.out.println("Temperamento: " + temperamento);
+        System.out.println("Status: " + status);
+    }
 }
